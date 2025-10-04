@@ -20,38 +20,19 @@ export const Stats = () => {
             <span className="chip">Tailwind</span>
             <span className="chip">React</span>
             <span className="chip">Nextjs</span>
-            <span className="chip">Vuejs</span>
             <span className="chip">Redux</span>
-            <span className="chip">NodeJS</span>
-            <span className="chip">Express</span>
-            <span className="chip">Postgres</span>
-            <span className="chip">MongoDB</span>
-            <span className="chip">Firebase</span>
-            <span className="chip">GitHub</span>
-          </div>
-        </div>
-      </Reveal>
-      <Reveal>
-        <div className={"statColumn"}>
-          <h4>
-            <AiFillSmile size="2.4rem" color="var(--brand)" />
-            <span>Use for fun</span>
-          </h4>
-          <div className={"statGrid"}>
-            <span className="chip">React Native</span>
-            <span className="chip">Gatsby</span>
-            <span className="chip">Chakra Ui</span>
-            <span className="chip">Tailwind</span>
-            <span className="chip">Figma</span>
-            <span className="chip">Planetscale</span>
-            <span className="chip">GraphQL</span>
-            <span className="chip">Firebase</span>
-            <span className="chip">Supabase</span>
+            <span className="chip">Graphql</span>
+            <span className="chip">Gsap</span>
+            <span className="chip">ThreeJs</span>
             <span className="chip">Vercel</span>
-            <span className="chip">Laravel</span>
+            <span className="chip">Schadcn</span>
+            <span className="chip">Figma</span>
+            <span className="chip">GitHub</span>
+            <span className="chip">Framer motion</span>
           </div>
         </div>
       </Reveal>
+      
     </div>
   );
 };

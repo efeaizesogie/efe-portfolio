@@ -30,9 +30,9 @@ export const Contact = () => {
                     </p>
                 </Reveal>
                 <Reveal width="100%">
-                    <Link href="mailto:efeaizesogie@gmail.com" className="text-brand">
-                        <div className={"contactEmail"}>
-                            <AiFillMail size="2.4rem" />
+                    <Link href="mailto:efeaizesogie@gmail.com" className="text-brand ">
+                        <div className="contactEmail hover:scale-95 font-semibold text-white">
+                            <AiFillMail size="1.8rem" />
                             <span>Send Email</span>
                         </div>
                     </Link>

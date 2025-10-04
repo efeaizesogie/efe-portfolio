@@ -1,17 +1,16 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
 
 export const Hero = () => {
     return (
-        <section className={`section-wrapper ${"hero"}`}>
+        <section className={`section-wrapper hero`}>
             <div className="heroGrid">
                 <div className="copyWrapp">
                     <Reveal>
                         <h1 className="title">
-                                                  Hi, I&apos;m EFE
+                                                  Hi, I&apos;m EFECODE
                             <motion.span
                                 style={{
                                     display: "inline-block",
@@ -44,11 +43,10 @@ export const Hero = () => {
                         </p>
                     </Reveal>
                     <Reveal>
-                        <StandardButton
-                            onClick={() => document.getElementById("contact")?.scrollIntoView()}
-                        >
+                        <button onClick={() => document.getElementById("contact")?.scrollIntoView()} className="outline-0 border-0 cursor-pointer py-3 px-6 bg-brand text-white text-base font-semibold rounded-sm relative z-20 overflow-hidden
+                        transition-all duration-150 hover:bg-opacity-90 hover:scale-95">
                             Contact me
-                        </StandardButton>
+                        </button>
                     </Reveal>
                 </div>
 

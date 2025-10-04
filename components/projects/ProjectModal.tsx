@@ -9,7 +9,7 @@ import { MdClose } from "react-icons/md";
 import Image from "next/image";
 interface Props {
     isOpen: boolean;
-    setIsOpen: Function;
+    setIsOpen: (value: boolean) => void;
     title: string;
     imgSrc: string;
     code: string;
@@ -59,11 +59,7 @@ export const ProjectModal = ({
                     height={400}
                     className="w-full"
                 />
-                {/* <img
-          className={styles.modalImage}
-          src={imgSrc}
-          alt={`An image of the ${title} project.`}
-        /> */}
+              
                 <div className='p-6 mt-2'>
                     <h4 className="text-4xl font-bold">{title}</h4>
                     <div className="flex flex-wrap gap-3 text-lg text-brand my-1">{tech.join(" - ")}</div>

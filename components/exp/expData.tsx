@@ -1,73 +1,77 @@
 export const experience = [
   {
-    title: "Rocky Mountain West Insurance LLC.",
-    position: "React Developer",
-    time: "Aug 2022 - October 2023",
-    location: "Grand Junction, CO",
+    title: "FoxyLabs",
+    position: "Frontend Developer",
+    time: "Aug 2024 - Present",
+    location: "Remote, Nigeria",
     description:
-      "Create functional, high-level, dynamic and reusable components based on mock-up given using Next JS. Coordinated on team for QA, bug fixes, features and code refactoring.",
+      "As a Frontend Developer, I transform UI/UX designs into seamless, interactive React components. I focus on creating responsive, device-optimized web experiences that feel intuitive and consistent across all platforms. Working closely with cross-functional teams, I build reusable components, uphold coding best practices, and ensure stability through thorough testing and debugging. With Git as my version control tool, I collaborate efficiently to deliver high-quality, maintainable web applications.",
     tech: [
       "Next JS",
       "React",
-      "MongoDB",
-      "Postgres",
-      "Python",
+      "TailwindCSS",
       "Git",
       "Github",
+      "Framer Motion",
+      "Gsap"
     ],
   },
   {
-    title: "Advance Technologies Integration, LLC.",
-    position: "Javascript Developer",
-    time: "May 2023 - August 2023",
-    location: "Rocklin, California 95765",
+    title: "DGIS",
+    position: "Geomatics and GIS Specialist",
+    time: "May 2024 - Aug 2025",
+    location: "Edo, Nigeria",
     description:
-      "I help build and scale core javascript functions and created test units. Also created reusable components for the front end and Azure API integrations.",
-    tech: ["JavaScript", "Vuejs", "Azure API", "Git", "GitLab"],
+      "Expertly apply ArcGIS for high-precision map creation and spatial analysis, supporting data-driven decision-making in engineering and environmental projects. Responsible for digitizing and managing geospatial datasets, ensuring accuracy and relevance across project stages. Utilize GPS and total station tools for field data collection, translating raw measurements into actionable insights. Collaborate on the development of technical drawings, maps, and reports, delivering presentations to clients and regulatory agencies. Produce detailed engineering plans and profiles in Civil 3D, contributing to the successful planning and execution of civil infrastructure projects.",
+    tech: ["ArcGIS", "Remote sensing", "Qgis", "Google Earth Pro", "Global mapper", "AutoCAD", "Civil 3D", "Mapping"],
   },
   {
-    title: "Advance Technologies Integration, LLC.",
-    position: "Javascript Developer",
-    time: "Apr 2022 - Jun 2022",
-    location: "Rocklin, California 95765",
+    title: "Balancee",
+    position: "Frontend Developer Intern",
+    time: "Sept 2024 - December 2024",
+    location: "Remote, Nigeria",
     description:
-      "I help build and scale core javascript functions and created test units. Also created reusable components for the front end and Azure API integrations.",
-    tech: ["JavaScript", "Vuejs", "Azure API", "Git", "GitLab"],
+      "As a Frontend Developer, I collaborated with software development teams to maintain and enhance the Balancee website using React.js, GraphQL, and Tailwind CSS. My role focused on building responsive interfaces, optimizing performance, and ensuring seamless integration with backend services.",
+    tech: ["ReactJS", "GraphQL", "TailwindCSS", "Redux", "Git", "GitLab", "Gsap"],
   },
   {
-    title: "Rocky Mountain West Insurance LLC.",
-    position: "Vuejs Developer",
-    time: "Aug 2021 - Jan 2022",
-    location: "Grand Junction, CO",
+    title: "Ascetic Capital LLC",
+    position: "Senior Software Developer",
+    time: "Aug 2024 - Oct 2024",
+    location: "Remote, United States",
     description:
-      "Vuejs Developer for Rocky Mountain West Insurance LLC. Created dashboard, reusable components from scratch and integrate api.",
-    tech: ["Vuejs", "MongoDB", "Postgres", "Python", "Git", "Github"],
+      "Served as a Frontend Developer in building the official website for Ascetic Capital, a modern investment firm. I translated UI/UX designs into responsive React.js components and collaborated with the design and backend teams to ensure a smooth user experience. Using technologies like Next.js and Tailwind CSS, I implemented clean, scalable code and optimized the site for speed, SEO, and accessibility—delivering a polished digital presence aligned with the firm’s brand identity.",
+    tech: ["NextJs", "MongoDB", "Typescript", "Express", "Auth0", "TailwindCSS", "Git", "Github"],
   },
   {
-    title: "Simple Cloudology",
-    position: "React Developer",
-    time: "Jan 2020 - April 2021",
-    location: "Sheridan, Wyoming",
+    title: "Mercator Technologies Ltd",
+    position: "Frontend Developer Intern",
+    time: "Nov 2023 - June 2024",
+    location: "Reomte, Nigeria",
     description:
-      "Worked as a developer and created dynamic reusable components, integrate calendly, messaging functionality and project management features.",
+      `Took a lead role in the development and implementation of intricate frontend components to enhance usability and interactivity within fintech applications.
+        Leveraged UI/UX principles to design responsive interfaces that cater to diverse user needs and expectations.
+        Integrated complex backend functionalities seamlessly with frontend features to deliver comprehensive fintech platforms.
+        Actively engaged in code reviews, performance optimizations, and continuous learning initiatives to enhance technical expertise and team collaboration.
+        Participated in strategic planning and decision-making processes to align software development efforts with business objectives and market trends.`,
     tech: [
-      "React",
-      "Nextjs",
-      "Sytled Components",
-      "Firebase Auth",
-      "Websockets",
-      "Calendly",
+      "Angular",
+      "Material UI",
+      "TailwindCSS",
       "Git",
       "Github",
     ],
   },
   {
-    title: "IFormat Logic",
-    position: "Fullstack Developer",
-    time: "Aug 2020 - Dec 2020",
-    location: "Palanginan, Zambales",
+    title: "Phreetech",
+    position: "Frontend Developer Intern",
+    time: "July 2023 - Sept 2023",
+    location: "Remote, Nigeria",
     description:
-      "Managed and created complex projects from start to finish and also collaborated with other developers. Translated requirements into polished, high-level web application.",
-    tech: ["Vuejs", "Laravel", "Tailwind", "Git", "Github"],
+      `Refined expertise in version control systems for seamless project management
+Mastered Angular, successfully delivering two robust projects in collaboration with peers.
+Gained proficiency in Jira, optimizing project workflows and team coordination.
+Collaborated with a team of interns to elevate branding and user experience.`,
+    tech: ["Angular", "Javascript", "Tailwind", "Bootstrap", "Git", "Github"],
   },
 ];

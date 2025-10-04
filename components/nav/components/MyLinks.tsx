@@ -4,7 +4,7 @@ import {
     AiFillLinkedin,
     AiFillGithub,
     AiFillInstagram,
-    AiFillX, AiFillTwitterCircle, AiFillTwitterSquare
+    AiFillTwitterSquare
 } from "react-icons/ai";
 import Link from "next/link";
 import { motion } from "framer-motion";

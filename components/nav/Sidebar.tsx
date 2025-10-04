@@ -13,10 +13,11 @@ export const SideBar = () => {
             threshold: 0.3,
         };
 
-        const callback = (entries: any) => {
-            entries.forEach((entry: any) => {
-                if (entry.isIntersecting) {
-                    setSelected(entry.target.id);
+        const callback = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                const target = entry.target as HTMLElement;
+                if (entry.isIntersecting && target.id) {
+                    setSelected(target.id);
                 }
             });
         };

@@ -2,14 +2,16 @@
 
 @theme {
   --color-foreground: #171717;
-  --color-background: rgb(17, 17, 17);
-  --color-bg-opaque: rgb(17, 17, 17, 0.25);
-  --color-background-light: rgb(35, 35, 35);
-  --color-background-dark: rgb(8, 8, 8);
+  --color-background: var(--background);
+  --color-bg-opaque: var(--bg-opaque);
+  --color-background-light: var(--background-light);
+  --color-background-dark: var(--background-dark);
 
-  --color-text: rgb(235, 236, 243);
+  --color-text: var(--text);
   --color-brand: #fc8c03;
 }
+
+
 
 :root {
   --background: rgb(17, 17, 17);
@@ -20,22 +22,37 @@
   --brand: #fc8c03;
 }
 
+:root.light {
+  --background: rgb(248, 250, 252);
+  --bg-opaque: rgb(248, 250, 252, 0.5);
+  --background-light: rgb(255, 255, 255);
+  --background-dark: rgb(226, 232, 240);
+  --text: rgb(30, 41, 59);
+  --brand: #fc8c03;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
-  margin: 0;
-  padding: 0;
+  @apply m-0 p-0;
 }
 
 *::selection {
-  background: var(--brand);
-  color: var(--background);
+  @apply text-background bg-brand;
 }
 
 .sidebar::-webkit-scrollbar {
-  display: none;
+  @apply hidden;
+}
+
+
+.highlight {
+  background: linear-gradient(120deg, #84fab0 0%, #fc8c03 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 html,
@@ -48,51 +65,40 @@ body {
 }
 
 body {
-  color: var(--text);
-  background: var(--background);
+  @apply text-text bg-background;
 }
 
 .section-wrapper {
-  position: relative;
-  z-index: 10;
-  max-width: 1150px;
-  margin: auto;
-  padding: 96px;
-  overflow: hidden;
+  @apply relative z-10 max-w-[1150px] m-auto py-18 px-6 md:p-24 overflow-hidden;
 }
 
-@media (max-width: 768px) {
-  .section-wrapper {
-    padding: 72px 24px;
-  }
-}
 
 .chip {
-  background: var(--background-light);
-  padding: 0.2rem 0.8rem;
-  border-radius: 999px;
+  @apply bg-background-light py-0.5 px-2 rounded-[999px];
 }
 
 .sidebar{
   @apply h-screen sticky top-0 right-0 z-20 flex flex-col items-center overflow-y-scroll;
 
   a {
-    @apply h-[100px] shrink-0 text-lg font-[200] flex items-center hover:bg-background hover:border-r-brand hover:opacity-100
-    justify-center opacity-[0.5] border-r w-full border-r-transparent transition-all duration-100 [writing-mode:vertical-lr];
+    @apply h-[100px] shrink-0 text-lg font-[200] flex items-center hover:bg-background hover:border-l-brand hover:opacity-100
+    justify-center opacity-[0.5] border-l-2 w-full border-l-transparent transition-all duration-100 [writing-mode:vertical-lr];
+
+    &.selected {
+  @apply cursor-pointer opacity-100 bg-background border-l-2 border-l-brand;
   }
+}
 }
 
 .logo{
-  @apply w-11 h-11 bg-background rounded-sm cursor-pointer shrink-0 text-2xl font-[900] flex items-center justify-center my-5;
+  @apply w-11 h-11 bg-background rounded-sm cursor-pointer shrink-0 text-2xl font-black flex items-center justify-center my-5;
 }
 
 .logo span{
   @apply text-brand;
 }
 
-.selected {
-  @apply cursor-pointer opacity-100 border-r border-r-brand;
-}
+
 
 /* Hero section css */
 .hero {
@@ -126,14 +132,6 @@ h1.title {
 .heroGrid {
   @apply flex md:flex-nowrap flex-col items-start flex-wrap gap-6 md:gap-12 mt-12;
   }
-
-
-.highlight {
-  background: linear-gradient(120deg, #84fab0 0%, #fc8c03 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .imageShadow {
   @apply absolute top-1/10 left-1/10 right-1/10 bottom-1/10 z-1 blur-lg bg-[rgba(0,0,0,0.2)];
@@ -194,7 +192,7 @@ h1.title {
 
 /* Link styles */
 .links {
-  @apply flex gap-4 pt-2;
+  @apply flex gap-4;
 
   a {
     @apply opacity-50 relative z-20 hover:text-brand hover:opacity-100 transition-all duration-100;
@@ -204,7 +202,7 @@ h1.title {
 /* Heading */
 
 .heading {
-  @apply px-6 md:px-9 flex items-center justify-between sticky top-0 z-20 bg-bg-opaque font-bold text-xl backdrop-blur-md;
+  @apply px-6 md:px-9 flex items-center justify-between sticky top-0 z-20 font-bold text-xl backdrop-blur-md;
   height: calc(45px + 36px);
 }
 
@@ -213,7 +211,7 @@ h1.title {
   overflow-hidden cursor-pointer p-1 sm:py-2.5 sm:px-5  items-center justify-center hover:border-text hover:text-text transition-all duration-200 ;
 
     svg {
-      @apply block sm:hidden h-8 w-8;
+      @apply block sm:hidden h-[18px] w-[18px];
     }
   }
 
@@ -221,26 +219,7 @@ h1.title {
 
 
 .contactEmail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-
-  width: fit-content;
-
-
-
-  margin: auto;
-
-  transition: 0.5s;
-
-  padding: 12px 32px 12px 32px;
-  border-radius: 1rem;
-  background: var(--background-light);
-}
-
-.contactEmail:hover {
-  color: var(--brand);
+  @apply flex items-center justify-center gap-2 w-fit m-auto py-3 px-8 rounded-lg bg-background-light hover:text-brand transition-all duration-250 ease-in;
 }
 
 

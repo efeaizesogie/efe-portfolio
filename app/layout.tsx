@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/utils/ThemeContext";
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -13,9 +14,6 @@ export const metadata: Metadata = {
   description: "Efe Aizesogie | Frontend Developer",
 };
 
-
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} antialiased `}
-      >
-        {children}
+      <body className={`${poppins.variable} antialiased`}>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
