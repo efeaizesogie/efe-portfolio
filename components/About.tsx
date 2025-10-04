@@ -19,13 +19,12 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className={"aboutText"}>
-              My skills include HTML, CSS, JavaScript, and various frontend frameworks like React and Vue.js. 
-              I&apos;ve also worked with backend technologies like Node.js, Firebase, MongoDB and PHP/Laravel , allowing me to build full-stack applications.
+              My skills include HTML, CSS, JavaScript, and various frontend frameworks like React and Next.js.
             </p>
           </Reveal>
           <Reveal>
             <p className={'aboutText'}>
-              When I&apos;m not coding, I enjoy digital painting. 
+              When I&apos;m not coding, I enjoy catography. 
               I believe that maintaining a healthy work-life balance is crucial for staying productive and motivated.
             </p>
           </Reveal>
