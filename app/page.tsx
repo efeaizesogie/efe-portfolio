@@ -5,6 +5,7 @@ import { About } from "@/components/About";
 import {Header} from "@/components/Header";
 import {Contact} from "@/components/Contact";
 import {Projects} from "@/components/projects/Projects";
+import { Experience } from "@/components/exp/Experience";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <Hero/>
           <About/>
           <Projects/>
+          <Experience/>
           <Contact/>
         <div
             style={{

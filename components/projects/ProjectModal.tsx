@@ -49,7 +49,7 @@ export const ProjectModal = ({
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 onClick={(e) => e.stopPropagation()}
-                className="cursor-auto w-100 max-w-[700px] h-fit rounded-xl overflow-hidden bg-background-light shadow shadow-[rgba(0, 0, 0, 0.1)]"
+                className="cursor-auto w-full max-w-[800px] h-fit rounded-xl overflow-hidden bg-background-light shadow-lg"
             >
                 <Image
                     priority
@@ -57,24 +57,24 @@ export const ProjectModal = ({
                     alt={`An image of the ${title} project.`}
                     width={500}
                     height={400}
-                    className="w-100"
+                    className="w-full"
                 />
                 {/* <img
           className={styles.modalImage}
           src={imgSrc}
           alt={`An image of the ${title} project.`}
         /> */}
-                <div className='p-6'>
-                    <h4 className="text-4xl">{title}</h4>
-                    <div className="flex flex-wrap gap-3 text-lg text-brand my-1 mx-6">{tech.join(" - ")}</div>
+                <div className='p-6 mt-2'>
+                    <h4 className="text-4xl font-bold">{title}</h4>
+                    <div className="flex flex-wrap gap-3 text-lg text-brand my-1">{tech.join(" - ")}</div>
 
-                    <div className="flex flex-col gap-3 text-base">{modalContent}</div>
+                    <div className="flex flex-col gap-3 text-base mt-6">{modalContent}</div>
 
                     <div className="mt-6">
-                        <p className="font-bold text-4xl mb-2">
+                        <p className="font-bold text-xl ">
                             Project Links<span className="text-brand">.</span>
                         </p>
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-6 mt-2">
                             <Link target="_blank" rel="nofollow" href={code} className="flex items-center gap-1 text-brand text-base hover:underline transition-all duration-150">
                                 <AiFillGithub /> source code
                             </Link>
@@ -90,6 +90,5 @@ export const ProjectModal = ({
 
     if (!isOpen) return <></>;
 
-    // @ts-ignore
-    return ReactDOM.createPortal(content, document.getElementById("root"));
+    return ReactDOM.createPortal(content, document.body);
 };

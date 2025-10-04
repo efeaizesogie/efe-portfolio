@@ -22,8 +22,11 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   margin: 0;
+  padding: 0;
 }
 
 *::selection {
@@ -121,7 +124,7 @@ h1.title {
 }
 
 .heroGrid {
-  @apply gap-4 flex md:flex-nowrap flex-col items-start flex-wrap md:items-center justify-center;
+  @apply flex md:flex-nowrap flex-col items-start flex-wrap gap-6 md:gap-12 mt-12;
   }
 
 
@@ -180,7 +183,7 @@ h1.title {
     @apply flex items-center font-[600] mb-6;
    
     span {
-      @apply text-2xl font-[900] relative ml-2
+      @apply text-2xl font-[900] relative ml-2;
     }
   }
 }
@@ -225,7 +228,7 @@ h1.title {
 
   width: fit-content;
 
-  font-size: var(--text-md);
+
 
   margin: auto;
 

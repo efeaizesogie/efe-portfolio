@@ -7,7 +7,6 @@ import Link from "next/link";
 import {JSX, useEffect, useRef, useState} from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
-import styles from "./projects.module.scss";
 interface Props {
     modalContent: JSX.Element;
     description: string;
@@ -55,12 +54,13 @@ export const Project = ({
                 initial="hidden"
                 animate={controls}
                 transition={{ duration: 0.75 }}
+
             >
                 <div
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                     onClick={() => setIsOpen(true)}
-                    className="w-100 bg-background-light cursor-pointer relative rounded-xs overflow-hidden aspect-video mb-4"
+                    className="bg-background-light w-full cursor-pointer relative rounded overflow-hidden aspect-video"
                 >
                     <Image
                         priority
@@ -72,22 +72,22 @@ export const Project = ({
                             width: hovered ? "90% !important" : "85% !important",
                             rotate: hovered ? "2deg" : "0deg",
                         }}
-                        className="w-[85%] h-[90%] md:w-100 md:h-auto absolute bottom-[30px] left-6/12 translate-x-[-50%] translate-y-[20%] transition-all duration-250 rounded-1"
+                        className="w-[85%] h-[90%] md:w-full md:h-auto absolute bottom-[30px] left-1/2 -translate-x-1/2 translate-y-[20%] transition-all duration-300 rounded"
                     />
 
                 </div>
                 <div className="my-4">
-                    <Reveal width="100%">
-                        <div className="flex items-center gap-3 w-100 my-4">
+                    <Reveal width="100%" >
+                        <div className="flex items-center gap-3 w-full">
 
-                            <h4 className="font-bold text-8 shrink-0 max-w-[calc(100%-150px)] ">{title}</h4>
-                            <div className="w-100 h-[1px] bg-text opacity-30" />
+                            <h4 className="font-bold text-lg shrink-0 max-w-[calc(100%-150px)] my-4">{title}</h4>
+                            <div className="w-full h-[1px] bg-text opacity-30" />
 
-                            <Link href={code} target="_blank" rel="nofollow" className="opacity-75 hover:opacity-100 transition-all duration-250ms">
+                            <Link href={code} target="_blank" rel="nofollow" className="opacity-75 hover:opacity-100 transition-all duration-300">
                                 <AiFillGithub size="1.8rem" />
                             </Link>
 
-                            <Link href={projectLink} target="_blank" rel="nofollow" className="opacity-75 hover:opacity-100 transition-all duration-250ms">
+                            <Link href={projectLink} target="_blank" rel="nofollow" className="opacity-75 hover:opacity-100 transition-all duration-300">
                                 <AiOutlineExport size="1.8rem" />
                             </Link>
                         </div>
@@ -96,7 +96,7 @@ export const Project = ({
                         <div className="flex flex-wrap gap-6 text-base text-brand my-2">{tech.join(" - ")}</div>
                     </Reveal>
                     <Reveal>
-                        <p className="font-extralight my-2">
+                        <p className="font-extralight">
                             {description} <br />
                             <span onClick={() => setIsOpen(true)} className="inline-block text-base font-[400] text-brand cursor-pointer mt-6 hover:underline transition-all duration-200">Learn more {">"} </span>
                         </p>
