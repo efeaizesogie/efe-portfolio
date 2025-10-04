@@ -2,21 +2,18 @@ export const projects = [
     {
         title: "Simple Payroll",
         imgSrc: "/simple-payroll.png",
-        code: "https://www.github.com/",
+        code: "https://github.com/efeaizesogie/simple-payroll",
         projectLink: "https://simple-payroll.vercel.app/",
-        tech: ["React", "Nextjs", "Styled Components", "Firebase Auth", "Laravel"],
+        tech: ["React", "TailwindCSS", "Javascript"],
         description:
-            "A Talent finder app for anything around the world. This is my first time as a React developer job.",
+            "Worked as a front-end developer and created a comprehensive payroll service using reactjs, tailwind and js.",
         modalContent: (
             <>
                 <p>
-                    Worked as a front-end developer and created dynamic reusable
-                    components, integrated calendly, messaging and project management
-                    features.
+                    Worked as a front-end developer and created a comprehensive payroll service using reactjs, tailwind and js.
                 </p>
                 <p>
-                    The tech stack is based on Nextjs with custom Styled components,
-                    connected to a Laravel backend, with data stored in MySQL.
+                    Designed to meet all your business needs, ensuring that employees are paid accurately and on time, every time.
                 </p>
             </>
         ),
@@ -26,22 +23,19 @@ export const projects = [
         imgSrc: "/propelll.png",
         code: "https://github.com/efeaizesogie/Propell",
         projectLink: "https://propell-ten.vercel.app/",
-        tech: ["React", "Tailwind",],
+        tech: ["Angular", "Tailwind", "JS"],
         description:
-            "A Dashboard for clients and admin of Rocky Mountain West Insurance LLC. using Vuejs and re-worked using Reactjs.",
+            "Propell is a comprehensive content management and marketing (CMM) platform designed to streamline the creation, management, and distribution of digital content. ",
         modalContent: (
             <>
                 <p>
-                    Worked as a front-end developer for this web application. Integrated
-                    APIs, created dynamic and reusable components.
+                    Propell is a comprehensive content management and marketing (CMM) platform designed to streamline the creation, management, and distribution of digital content. 
                 </p>
                 <p>
-                    I work primarily on the frontend, creating reusable components and
-                    integrating APIs.
+                    Propell enables businesses to efficiently manage their online presence, engage with their audience, and drive marketing efforts through powerful tools and analytics. 
                 </p>
                 <p>
-                    The team in total consists of 3 developers. This is a passion project
-                    for all of us.
+                    Worked on this project during an internship, contributing to the frontend development using Angular to implement the UI/UX designs.
                 </p>
             </>
         ),
@@ -51,22 +45,17 @@ export const projects = [
         imgSrc: "/chillspot.png",
         code: "https://github.com/efeaizesogie/efeosa_cocktails",
         projectLink: "https://efeosa-cocktails.vercel.app/",
-        tech: ["React", "Tailwind",],
+        tech: ["React", "Tailwind", "JS"],
         description:
-            "A Dashboard for clients and admin of Rocky Mountain West Insurance LLC. using Vuejs and re-worked using Reactjs.",
+            "A Landing page for a bar selling cocktails and mocktails. Created using tailwind and Reactjs.",
         modalContent: (
             <>
                 <p>
-                    Worked as a front-end developer for this web application. Integrated
-                    APIs, created dynamic and reusable components.
+                    A Landing page for a bar selling cocktails and mocktails. Created using tailwind and Reactjs.
+                    
                 </p>
                 <p>
-                    I work primarily on the frontend, creating reusable components and
-                    integrating APIs.
-                </p>
-                <p>
-                    The team in total consists of 3 developers. This is a passion project
-                    for all of us.
+                    Worked as a front-end developer for this web application. Built the landing page using dynamic and reusable components.
                 </p>
             </>
         ),
@@ -76,22 +65,19 @@ export const projects = [
         imgSrc: "/review-nest.png",
         code: "https://github.com/efeaizesogie/Review-Nest",
         projectLink: "https://review-nest-7w4m-git-master-efeaizesogie.vercel.app/",
-        tech: ["Angular", "Tailwind",],
+        tech: ["Angular", "Tailwind", "JS"],
         description:
-            "A Dashboard for clients and admin of Rocky Mountain West Insurance LLC. using Vuejs and re-worked using Reactjs.",
+            "Contributed as an Angular Frontend Developer for Reviewnest, an empowering platform built for small businesses to gather customer insights and reviews.",
         modalContent: (
             <>
                 <p>
-                    Worked as a front-end developer for this web application. Integrated
-                    APIs, created dynamic and reusable components.
+                    Contributed as an Angular Frontend Developer for Reviewnest, an empowering platform built for small businesses to gather customer insights and reviews. 
                 </p>
                 <p>
-                    I work primarily on the frontend, creating reusable components and
-                    integrating APIs.
+                    Leveraging UI/UX designs, I helped bring the platform to life and enhance user experience. 
                 </p>
                 <p>
-                    The team in total consists of 3 developers. This is a passion project
-                    for all of us.
+                    Our team's efforts aimed at driving business growth and enabling data-driven decisions while empowering small businesses without websites or applications.
                 </p>
             </>
         ),
@@ -102,33 +88,31 @@ export const projects = [
         code: "https://github.com/efeaizesogie/taskflow",
         projectLink:
             "https://taskflow-flax-six.vercel.app/",
-        tech: ["React", "Tailwind", "Framer Motion"],
+        tech: ["React", "Tailwind"],
         description:
-            "WorshipHIM is a chord and lyrics app developed to help ease everyone in their worship to God.",
+            "Landing page for a task management app, that helps teams and individuals manage tasks, track progress, and stay productive.",
         modalContent: (
             <>
                 <p>
-                    WorshipHIM is a chord and lyrics app developed to help ease everyone
-                    in their worship to God.
+                    Landing page for a task management app, that helps teams and individuals manage tasks, track progress, and stay productive. 
                 </p>
-                <p>This is a very fun project that I made using React Native.</p>
+                <p>Cutting through the noise and focusing on what matters. Built using Reactjs and tailwindcss</p>
             </>
         ),
     },
     {
         title: "ShippersWise",
         imgSrc: "/shipperswise.png",
-        code: "https://github.com/jcdevz-dev/jc-portfolio",
+        code: "https://github.com/efeaizesogie/web",
         projectLink: "https://shipperswise.com/",
-        tech: ["React", "Styled Components", "Typescript"],
-        description: "First Portfolio Made with React JS",
+        tech: ["React", "Bootstrap", "Javascript"],
+        description: "Your one-stop international freight comparison e-market. ",
         modalContent: (
             <>
                 <p>
-                    This is my first version of my portfolio that I made to showcase my
-                    projects.
+                   Your one-stop international freight comparison e-market. 
                 </p>
-                <p>First step in learning React JS by creating a portfolio site.</p>
+                <p>Get instant quotes, simple bookings and easy tracking of your shipments.</p>
             </>
         ),
     },

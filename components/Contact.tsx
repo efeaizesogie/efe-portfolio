@@ -31,7 +31,7 @@ export const Contact = () => {
                 </Reveal>
                 <Reveal width="100%">
                     <Link href="mailto:efeaizesogie@gmail.com" className="text-brand ">
-                        <div className="contactEmail hover:scale-95 font-semibold text-white">
+                        <div className="contactEmail hover:scale-95 font-semibold text-text">
                             <AiFillMail size="1.8rem" />
                             <span>Send Email</span>
                         </div>
