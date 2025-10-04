@@ -9,8 +9,8 @@ import { Experience } from "@/components/exp/Experience";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-[1fr_60px]">
-      <main id="main">
+    <div className="grid grid-cols-[1fr_60px] w-full h-screen overflow-hidden">
+      <main id="main" className=" overflow-x-hidden">
           <Header/>
           <Hero/>
           <About/>

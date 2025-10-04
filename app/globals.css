@@ -64,6 +64,15 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+#main::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 body {
   @apply text-text bg-background;
 }
@@ -110,7 +119,7 @@ body {
 }
 
 h1.title {
-  @apply text-5xl md:text-8xl font-[900] md:leading-[1.1];
+  @apply text-5xl md:text-8xl font-[900] md:leading-[1.1] text-start;
 
   span {
     @apply: text-brand;
