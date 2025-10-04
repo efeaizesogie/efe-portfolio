@@ -77,7 +77,7 @@ export const projects = [
                     Leveraging UI/UX designs, I helped bring the platform to life and enhance user experience. 
                 </p>
                 <p>
-                    Our team's efforts aimed at driving business growth and enabling data-driven decisions while empowering small businesses without websites or applications.
+                    Our team&apos;s efforts aimed at driving business growth and enabling data-driven decisions while empowering small businesses without websites or applications.
                 </p>
             </>
         ),
