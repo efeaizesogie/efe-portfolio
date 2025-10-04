@@ -40,7 +40,7 @@ export const ProjectModal = ({
 
 
     const content = (
-        <div className="cursor-pointer fixed top-0 left-0 right-0 z-[10000] h-screen py-12 px-6 bg-bg-opaque backdrop-blur-md overflow-y-scroll flex justify-center" onClick={() => setIsOpen(false)}>
+        <div className="cursor-pointer fixed top-0 left-0 right-0 bottom-0 z-[10000] py-12 px-6 bg-bg-opaque backdrop-blur-md overflow-y-scroll flex justify-center" onClick={() => setIsOpen(false)}>
             <button className="bg-none border-none text-text text-4xl absolute top-6 right-6 cursor-pointer">
                 <MdClose />
             </button>
