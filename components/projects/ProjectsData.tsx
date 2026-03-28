@@ -1,5 +1,27 @@
 export const projects = [
     {
+        title: "PayFlow Analyzer",
+        imgSrc: "/payflow-analyzer.png",
+        code: "https://github.com/efeaizesogie/payflow-analyzer",
+        projectLink: "https://payflow-analyzer.vercel.app/",
+        tech: ["React", "TypeScript", "Recharts", "Vite"],
+        description:
+            "Transaction analytics dashboard that classifies spend by category using a custom token-scoring engine, detects anomalous transactions via standard deviation analysis, and projects end-of-month burn rate using linear regression.",
+        modalContent: (
+            <>
+                <p>
+                    PayFlow Analyzer ingests a transaction feed and automatically classifies each transaction into categories (food, transport, utilities, entertainment, salary, transfer) using a weighted keyword-scoring engine — no external ML library needed.
+                </p>
+                <p>
+                    The anomaly detection engine computes mean and standard deviation per category, then flags any transaction that sits more than 2 standard deviations from the category mean — surfaced in a dedicated alert panel.
+                </p>
+                <p>
+                    A linear regression model runs over the last 30 days of spend to project the next 7 days as a dashed forecast line on a Recharts ComposedChart. Category filters are stored in URL state so every filtered view is shareable.
+                </p>
+            </>
+        ),
+    },
+    {
         title: "Simple Payroll",
         imgSrc: "/simple-payroll.png",
         code: "https://github.com/efeaizesogie/simple-payroll",
@@ -86,8 +108,7 @@ export const projects = [
         title: "TaskFlow",
         imgSrc: "/taskflow.png",
         code: "https://github.com/efeaizesogie/taskflow",
-        projectLink:
-            "https://taskflow-flax-six.vercel.app/",
+        projectLink: "https://taskflow-flax-six.vercel.app/",
         tech: ["React", "Tailwind"],
         description:
             "Landing page for a task management app, that helps teams and individuals manage tasks, track progress, and stay productive.",
