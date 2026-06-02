@@ -6,6 +6,7 @@ import {Header} from "@/components/Header";
 import {Contact} from "@/components/Contact";
 import {Projects} from "@/components/projects/Projects";
 import { Experience } from "@/components/exp/Experience";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           <About/>
           <Projects/>
           <Experience/>
+          <Testimonials/>
           <Contact/>
         <div
             style={{
