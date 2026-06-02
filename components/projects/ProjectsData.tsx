@@ -1,5 +1,36 @@
 export const projects = [
   {
+    title: "PayFlow Analyzer",
+    imgSrc: "/payflow-analyzer.png",
+    code: "https://github.com/efeaizesogie/payflow-analyzer",
+    projectLink: "https://payflow-analyzer.vercel.app/",
+    tech: ["React", "TypeScript", "Recharts", "Vite"],
+    description:
+      "Transaction analytics dashboard that classifies spend by category using a custom token-scoring engine, detects anomalous transactions via standard deviation analysis, and projects end-of-month burn rate using linear regression.",
+    modalContent: (
+      <>
+        <p>
+          PayFlow Analyzer ingests a transaction feed and automatically
+          classifies each transaction into categories (food, transport,
+          utilities, entertainment, salary, transfer) using a weighted
+          keyword-scoring engine — no external ML library needed.
+        </p>
+        <p>
+          The anomaly detection engine computes mean and standard deviation per
+          category, then flags any transaction that sits more than 2 standard
+          deviations from the category mean — surfaced in a dedicated alert
+          panel.
+        </p>
+        <p>
+          A linear regression model runs over the last 30 days of spend to
+          project the next 7 days as a dashed forecast line on a Recharts
+          ComposedChart. Category filters are stored in URL state so every
+          filtered view is shareable.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Simple Payroll",
     imgSrc: "/simple-payroll.png",
     code: "https://github.com/efeaizesogie/simple-payroll",
@@ -21,139 +52,28 @@ export const projects = [
     ),
   },
   {
-    title: "Veescents",
-    imgSrc: "/veescents.png",
-    code: "https://github.com/efeaizesogie/veescents-next",
-    projectLink: "https://veescents-next.vercel.app/",
-    tech: ["React", "TailwindCSS", "Javascript"],
+    title: "Propelll",
+    imgSrc: "/propelll.png",
+    code: "https://github.com/efeaizesogie/Propell",
+    projectLink: "https://propell-ten.vercel.app/",
+    tech: ["Angular", "Tailwind", "JS"],
     description:
-      "Veescents is a modern e-commerce fragrance store showcasing a curated selection of authentic designer, Arabian, and niche perfumes with a seamless shopping experience and fast delivery options.",
-
+      "Propell is a comprehensive content management and marketing (CMM) platform designed to streamline the creation, management, and distribution of digital content. ",
     modalContent: (
       <>
         <p>
-          Veescents is a luxury fragrance e-commerce platform designed to
-          connect customers with authentic designer, Arabian, and niche
-          perfumes. The store focuses on providing a carefully curated selection
-          of high-quality scents across different budgets and preferences.
+          Propell is a comprehensive content management and marketing (CMM)
+          platform designed to streamline the creation, management, and
+          distribution of digital content.
         </p>
         <p>
-          The platform includes product listings, categorized collections,
-          best-seller highlights, deal sections, and a smooth shopping
-          experience with cart and wishlist functionality. It also emphasizes
-          authenticity, expert curation, and fast nationwide delivery, ensuring
-          customers receive genuine products efficiently.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Aether",
-    imgSrc: "/aether.png",
-    code: "https://github.com/efeaizesogie/Aether",
-    projectLink: "https://aether-omega-blush.vercel.app/",
-    tech: ["React", "Tailwind", "TS", "HTML"],
-    description:
-      "Aether is a futuristic concept website showcasing next-generation smart furniture and living spaces, combining immersive storytelling, interactive product experiences, and innovative UI design.",
-
-    modalContent: (
-      <>
-        <p>
-          Aether is a futuristic digital experience designed to present a vision
-          of next-generation living through intelligent furniture, sustainable
-          materials, and advanced home technologies. The platform combines
-          immersive storytelling with modern web design to create a compelling
-          brand narrative.
+          Propell enables businesses to efficiently manage their online
+          presence, engage with their audience, and drive marketing efforts
+          through powerful tools and analytics.
         </p>
         <p>
-          The application features interactive product showcases, lifestyle
-          collections, AR-inspired experiences, customization interfaces,
-          animated sections, and responsive layouts that guide users through the
-          Aether ecosystem. Every section was carefully crafted to deliver a
-          premium and engaging user experience.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Muni",
-    imgSrc: "/muni.png",
-    code: "https://github.com/efeaizesogie/muni_out-main",
-    projectLink: "https://poetic-licorice-8da1a7.netlify.app/",
-    tech: ["React", "Tailwind", "TS", "HTML"],
-    description:
-      "Muni is an AI-powered municipal services platform designed to help local governments automate resident support, streamline service requests, and improve citizen engagement through intelligent digital solutions.",
-
-    modalContent: (
-      <>
-        <p>
-          Muni is a comprehensive civic technology platform built to modernize
-          the way municipalities interact with residents. The platform leverages
-          artificial intelligence to provide instant access to municipal
-          information, automate service requests, and reduce the administrative
-          burden on local government teams.
-        </p>
-        <p>
-          The solution includes an AI-powered resident assistant, administrative
-          dashboard, resident web and mobile applications, service request
-          management, notifications, tax portals, knowledge base integration,
-          and municipal CRM functionality. The platform is designed to improve
-          response times, increase operational efficiency, and enhance resident
-          satisfaction through seamless digital experiences.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Gis Data Scout",
-    imgSrc: "/gis-data-scout.png",
-    code: "https://github.com/efeaizesogie/gis-data-scout",
-    projectLink: "https://gis-data-scout.vercel.app/",
-    tech: ["Angular", "Tailwind", "TS"],
-    description:
-      "GIS Data Scout is an AI-powered geospatial data discovery assistant that helps users quickly find relevant GIS datasets, research papers, and spatial information through natural language queries.",
-
-    modalContent: (
-      <>
-        <p>
-          GIS Data Scout is an intelligent geospatial assistant designed to
-          simplify how users discover and access GIS data for analysis. Instead
-          of manually searching through fragmented portals and databases, users
-          can describe their data needs in plain language and receive curated,
-          relevant results instantly.
-        </p>
-        <p>
-          The platform leverages AI models and web search capabilities to
-          retrieve spatial datasets, research materials, and structured data
-          formats such as CSV and georeferenced files. It supports use cases
-          like flood analysis, environmental monitoring, urban planning, and
-          other geospatial research workflows.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Elena Vossen Photography Portfolio",
-    imgSrc: "/elena.png",
-    code: "https://github.com/efeaizesogie/photography-portfolio",
-    projectLink: "https://photography-portfolio-azure-nine.vercel.app/",
-    tech: ["React", "Tailwind", "TS"],
-    description:
-      "Elena Vossen is a cinematic photography portfolio website showcasing editorial, fashion, portrait, and landscape work through a minimalist storytelling-driven visual experience.",
-
-    modalContent: (
-      <>
-        <p>
-          Elena Vossen is a cinematic photography portfolio designed to present
-          a curated body of visual work across portrait, fashion, editorial,
-          street, and landscape photography. The platform emphasizes
-          storytelling through light, composition, and mood.
-        </p>
-        <p>
-          The site features signature collections, categorized archives, and
-          immersive visual sections that highlight the photographer’s artistic
-          direction. Each project is presented with a focus on atmosphere,
-          emotion, and the relationship between subject and environment.
+          Worked on this project during an internship, contributing to the
+          frontend development using Angular to implement the UI/UX designs.
         </p>
       </>
     ),
